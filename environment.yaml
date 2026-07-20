@@ -1,0 +1,20 @@
+name: birdcallseparation
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas
+  - pytorch
+  - torchaudio
+  - pytorch-cuda=12.4
+  - pysoundfile
+  - ffmpeg
+  - ipykernel
+  - tqdm
+  - librosa
+  - seaborn
+  - pip
+  - pip:
+      - torchcodec
