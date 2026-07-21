@@ -56,8 +56,8 @@ def parse_args() -> argparse.Namespace:
         "-nb",
         "--num-birds",
         type=int,
-        default=2,
-        help="Number of birds to use per recording. Default: 2",
+        default=3,
+        help="Number of birds to use per recording. Default: 3",
     )
 
     parser.add_argument(
