@@ -1,0 +1,64 @@
+general:
+  device: "cuda:0"
+  batch_size: 8
+  epochs: 200
+  num_workers: 16
+  eps: 0.000001
+  model_save_frequency: 5
+  seed: 42
+  compile: false
+  model_save_path: "../models/modified_sr_corrnet_3/"
+
+### Follow-up runs
+
+run-1:
+  enable: true
+  train_params:
+    lr: 0.1
+    loss_clipping: null
+  model_params:
+    num_encoder_blocks: 1
+    num_decoder_blocks: 1
+    num_speakers: 3
+    dim: 32
+    dim_feedforward: 64
+    nheads: 4
+    kernel_size_feedforward: 7
+    n_fft: 128
+    win_length: 128
+    hop_length: 64
+
+run-2:
+  enable: true
+  train_params:
+    lr: 0.1
+    loss_clipping: 30.0
+  model_params:
+    num_encoder_blocks: 1
+    num_decoder_blocks: 2
+    num_speakers: 3
+    dim: 32
+    dim_feedforward: 64
+    nheads: 4
+    kernel_size_feedforward: 7
+    n_fft: 128
+    win_length: 128
+    hop_length: 64
+
+run-3:
+  enable: true
+  train_params:
+    lr: 0.1
+    loss_clipping: 30.0
+  model_params:
+    num_encoder_blocks: 1
+    num_decoder_blocks: 1
+    num_speakers: 3
+    dim: 32
+    dim_feedforward: 64
+    nheads: 4
+    kernel_size_feedforward: 7
+    n_fft: 128
+    win_length: 128
+    hop_length: 64
+

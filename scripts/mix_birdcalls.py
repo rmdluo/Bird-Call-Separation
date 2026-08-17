@@ -40,15 +40,15 @@ def parse_args() -> argparse.Namespace:
         "-s",
         "--sample-rate",
         type=int,
-        default=16000,
-        help="Sample rate to resample to. Default: 16000",
+        default=8000,
+        help="Sample rate to resample to. Default: 8000",
     )
 
     parser.add_argument(
         "-t",
         "--time",
         type=int,
-        default=10,
+        default=5,
         help="Number of seconds to use. Default: 5",
     )
 
