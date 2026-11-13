@@ -1,5 +1,7 @@
 # Bird Call Separation
 
+This is a research project done for Johns Hopkins University `Deep Learning Using Transformers - 705.744` course. It implements a simplified [SR Corrnet](https://arxiv.org/html/2603.29097v1)-like transformer model with early splitting for bird vocalization splitting. It includes a custom RoPE self-attention implementation that gets used for the time and frequency based attention blocks. Separately, it uses the same self-attention implementation for speaker based attention blocks. The code in this repository is a prototype and could be further refined for better performance.
+
 ## Environment Setup
 
 Run the following commands:
